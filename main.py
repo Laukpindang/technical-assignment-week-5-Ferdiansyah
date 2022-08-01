@@ -20,4 +20,5 @@ def callback(channel):
     GPIO.output(12,GPIO.LOW) 
     GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300) # Pemberitahuan saat pin menjadi TINGGI atau RENDAH GPIO.add_event_callback(channel, callback) # Tetapkan fungsi ke PIN GPIO, Jalankan fungsi saat berubah
 
-#infinite loop while True: time.sleep(1)
+#infinite loop 
+while True: time.sleep(1)
